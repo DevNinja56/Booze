@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SplashScreenActivity"
+    android:background="@color/white"
+    xmlns:fab="http://schemas.android.com/tools"
+    >
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo_layout"
+        >
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logo"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/logo"
+            android:elevation="@dimen/_10sdp"
+
+            />
+
+    </RelativeLayout>
+
+
+
+    <!--    <com.wang.avi.AVLoadingIndicatorView-->
+    <!--        android:layout_below="@id/logo_layout"-->
+    <!--        android:id="@+id/avi"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        style="@style/AVLoadingIndicatorView"-->
+    <!--        android:visibility="visible"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        app:indicatorName="BallClipRotatePulseIndicator"-->
+    <!--        android:translationZ="90dp"-->
+    <!--        app:indicatorColor="@color/colorPrimaryDark"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        />-->
+
+
+
+</RelativeLayout>
+

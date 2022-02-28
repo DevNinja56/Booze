@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DeliveryAddressActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:background="@color/black"
+        >
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:id="@+id/backsign"
+            />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/txt_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoe"
+            android:text="Delivery Address"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/btn_CurrentLocationLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="?attr/selectableItemBackground"-->
+
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:paddingTop="@dimen/_25sdp"-->
+<!--            android:paddingBottom="0dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/current_LocationLLayout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_25sdp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_22sdp"-->
+<!--                        android:layout_height="@dimen/_22sdp"-->
+<!--                        android:src="@drawable/ic_current_location" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="right"-->
+<!--                        android:fontFamily="@font/segoe"-->
+<!--                        android:paddingLeft="25dp"-->
+<!--                        android:text="Use Current Location"-->
+<!--                        android:textColor="@color/colorPrimaryDark"-->
+<!--                        android:textSize="@dimen/_14sdp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_below="@id/current_LocationLLayout"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:background="@color/colorPrimaryDim" />-->
+
+
+<!--        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_28sdp"
+            android:paddingBottom="0dp"
+
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/btn_AddNewLocationLayout"
+            >
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_NewLocationLLayout"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:src="@drawable/ic_add_new_location"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Add New Location"
+                        android:textStyle="bold"
+                        android:layout_gravity="right"
+                        android:textSize="@dimen/_14sdp"
+                        android:fontFamily="@font/segoe"
+                        android:paddingLeft="25dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@id/add_NewLocationLLayout"
+                android:layout_height="1dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorPrimaryDim"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recent_AddressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_25sdp"
+            android:paddingBottom="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Recent"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:textSize="@dimen/_16sdp"
+                android:fontFamily="@font/segoe"
+                android:paddingLeft="25dp"
+                android:id="@+id/recent_Text"
+                />
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@id/recent_Text"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/recent_LocationLayout"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ic_recent"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:src="@drawable/ic_recent"
+                        />
+
+                    <TextView
+                        android:id="@+id/recent_Address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="0dp"
+                        android:layout_toRightOf="@id/ic_recent"
+                        android:fontFamily="@font/segoe"
+                        android:paddingLeft="25dp"
+                        android:text="2 Allen Street, Fycx"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <ImageView
+                        android:id="@+id/ic_Tick"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_25sdp"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:src="@drawable/ic_tick"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@id/recent_LocationLayout"
+                android:layout_height="1dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorPrimaryDim"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

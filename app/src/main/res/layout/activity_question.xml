@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.QuestionActivity"
+    android:background="@drawable/bg_wine_pic"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_upper_curve"
+        android:translationZ="1dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/age_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Are you age 18 or older?"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/segoe"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:translationZ="1dp"
+            android:layout_below="@id/age_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <com.xgc1986.ripplebutton.widget.RippleButton
+                android:id="@+id/btn_No"
+                android:layout_weight="50"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="No"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:fontFamily="@font/segoe"
+                android:textStyle="bold"
+                android:background="@color/grey"
+                android:textSize="@dimen/_18sdp" />
+
+            <com.xgc1986.ripplebutton.widget.RippleButton
+                android:layout_weight="50"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/colorAccent"
+                android:id="@+id/btn_Yes"
+                android:text="Yes"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:fontFamily="@font/segoe"
+                android:textStyle="bold"
+                android:textSize="@dimen/_18sdp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

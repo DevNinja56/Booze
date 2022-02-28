@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CurrentOrdersFragment"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    >
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        fab:indicatorName="BallSpinFadeLoaderIndicator"
+        fab:indicatorColor="@color/colorPrimary"
+        android:translationZ="@dimen/_1sdp"
+        />
+    <TextView
+        android:id="@+id/no_OrderText"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Order Available"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/segoe"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:layout_centerInParent="true"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_CurrentOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+</RelativeLayout>

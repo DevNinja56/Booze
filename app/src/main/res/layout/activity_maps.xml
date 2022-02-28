@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.MapsActivity">
+
+    <RelativeLayout
+        android:id="@+id/btn_Back"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bg_circle"
+        android:layout_margin="@dimen/_20sdp"
+        android:translationZ="1dp"
+        >
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_back_black"
+            android:layout_centerInParent="true"
+            android:translationZ="1dp"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/location_Pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_map_pin"
+        android:layout_centerInParent="true"
+        android:translationZ="1dp"
+        />
+
+
+    <fragment
+        android:id="@+id/google_maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SelectLocationActivity" />
+
+    <LinearLayout
+        android:layout_below="@id/btn_Back"
+        android:id="@+id/upper_layout"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@drawable/bg_rounded_corners"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_height="55dp"
+        >
+        <fragment
+            android:id="@+id/autocomplete_fragment1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_currentLocation"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_above="@+id/btn_bottom_section"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_circle"
+        android:layout_margin="@dimen/_20sdp"
+        >
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_current_location"
+            android:layout_centerInParent="true"
+            android:translationZ="1dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_upper_curve"
+        android:id="@+id/btn_bottom_section"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:backgroundTint="@color/white"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Add A New Address"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/segoe"
+            android:paddingLeft="25dp"
+            android:layout_above="@+id/layout_Address"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/layout_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_SaveAddress"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@drawable/ic_location_pin"
+                android:layout_centerInParent="true"
+                android:translationZ="1dp"
+                />
+            <TextView
+                android:id="@+id/confirm_AddressText"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:maxLines="2"
+                android:text="Selected Address"
+                android:layout_gravity="left"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/segoe"
+                />
+
+        </LinearLayout>
+
+
+        <com.xgc1986.ripplebutton.widget.RippleButton
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_SaveAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/bg_upper_curve"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Save Address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

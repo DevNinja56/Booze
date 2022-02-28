@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.ForgetPasswordActivity">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        fab:indicatorName="BallSpinFadeLoaderIndicator"
+        fab:indicatorColor="@color/colorPrimary"
+        android:translationZ="@dimen/_1sdp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:background="@color/black"
+        >
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:id="@+id/backsign"
+            />
+
+        <TextView
+            android:id="@+id/verification_For"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/segoe"
+            android:text="Code for"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/signin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/top"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        >
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:fontFamily="@font/segoe"
+            android:src="@drawable/app_logo"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/segoe"
+            android:text="Verification Code"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:maxWidth="@dimen/_200sdp"
+            android:fontFamily="@font/segoe"
+            android:text="Please type in the verification code sent to your E-mail...…..."
+            android:textColor="@color/lightTextColor"
+            android:textSize="@dimen/_13sdp" />
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:inputType="number"
+            app:height="80dp"
+            app:width="63dp"
+            app:otp_text_size="@dimen/_25sdp"
+            app:otp_box_background="@drawable/otp_bg"
+            android:textColor="@color/black"
+            />
+
+        <com.xgc1986.ripplebutton.widget.RippleButton
+            android:id="@+id/btn_Send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_btn"
+            android:text="send"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/segoe"
+            android:text="Did Not Received? "
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_15sdp" />
+
+        <com.xgc1986.ripplebutton.widget.RippleButton
+            android:id="@+id/btn_ReSend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_btn_border"
+            android:text="resend"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Booze</string>
+    <string name="title_activity_maps">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
+
+    <string name="Wine">Wine</string>
+    <string name="Liquor">Liquor</string>
+    <string name="Beer">Beer</string>
+    <string name="Mixers">Mixers</string>
+    <string name="Smokes">Smokes</string>
+
+    <string name="Champagne">Champagne</string>
+    <string name="Rose">Rose</string>
+    <string name="Red_Vine">Red Vine</string>
+    <string name="White_Vine">White Vine</string>
+    <string name="Sparkling_Vine">Sparkling Vine</string>
+
+
+    <string name="Soft_Drink">Soft Drink</string>
+    <string name="Juice">Juice</string>
+    <string name="Mixers_Sub">Mixers</string>
+
+    <string name="Cigarette">Cigarette</string>
+    <string name="Hookah_Flavor">Hookah Flavor</string>
+    <string name="Hookah_Charcoal">Hookah Charcoal</string>
+    <string name="Cigar">Cigar</string>
+    <string name="Hookah_Accessories">Hookah &amp; Accessories</string>
+    <string name="Vape_Refill">Vape &amp; Refill</string>
+
+    <string name="Congnac">Congnac</string>
+    <string name="Gin">Gin</string>
+    <string name="Rhum">Rhum</string>
+    <string name="Tequila">Tequila</string>
+    <string name="Vodka">Vodka</string>
+    <string name="Whishey_Blend">Whishey Blend</string>
+
+
+    <string-array name="Wine">
+        <item>@string/Champagne</item>
+        <item>@string/Rose</item>
+        <item>@string/Red_Vine</item>
+        <item>@string/White_Vine</item>
+        <item>@string/Sparkling_Vine</item>
+    </string-array>
+
+    <string-array name="Liquor">
+        <item>@string/Congnac</item>
+        <item>@string/Gin</item>
+        <item>@string/Rhum</item>
+        <item>@string/Tequila</item>
+        <item>@string/Vodka</item>
+        <item>@string/Whishey_Blend</item>
+    </string-array>
+
+    <string-array name="Mixers">
+        <item>@string/Soft_Drink</item>
+        <item>@string/Juice</item>
+        <item>@string/Mixers_Sub</item>
+    </string-array>
+
+    <string-array name="Smokes">
+        <item>@string/Cigarette</item>
+        <item>@string/Hookah_Flavor</item>
+        <item>@string/Hookah_Charcoal</item>
+        <item>@string/Cigar</item>
+        <item>@string/Hookah_Accessories</item>
+    </string-array>
+
+    <string-array name="Categories">
+        <item>@string/Wine</item>
+        <item>@string/Liquor</item>
+        <item>@string/Beer</item>
+        <item>@string/Mixers</item>
+        <item>@string/Smokes</item>
+    </string-array>
+
+</resources>

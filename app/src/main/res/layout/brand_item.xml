@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_110sdp"
+    android:layout_height="@dimen/_110sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:id="@+id/item_Brand"
+    android:orientation="vertical"
+    >
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/brand_Image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/ic_brand" />
+</LinearLayout>

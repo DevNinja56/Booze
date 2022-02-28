@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="@dimen/_185sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:id="@+id/item_Product"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/product_ImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/isOnSale"
+            android:background="@color/colorAccent"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SALE"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/product_Image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:src="@drawable/ic_botel" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/product_ImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="product"
+            android:id="@+id/text_ProductName"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/segoe"
+            android:maxLines="1"
+            />
+        <TextView
+            android:visibility="gone"
+            android:fontFamily="@font/segoe"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="company name"
+            android:id="@+id/text_CompanyName"
+            android:textSize="@dimen/_11sdp"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/_7sdp"
+            android:fontFamily="@font/segoe"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="$ 12.99"
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/text_Price"
+            />
+    </LinearLayout>
+</RelativeLayout>
